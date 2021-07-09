@@ -1,0 +1,73 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+}
+.arrow_back{
+    padding: 20px;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.infos_films{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    padding: 50px;
+}
+.infos_films img{
+    width: 700px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #CFDC8A;
+}
+.infos_contenu{
+    width: 700px;
+    margin-left: 50px;
+}
+.infos_contenu .resume{
+    padding: 25px 0px;
+}
+.boutons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    padding: 25px 0px;
+}
+.boutons button{
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boutons button a{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    color: #FF4F79;
+    padding: 15px;
+    font-size:20px;
+}
+button a svg{
+    padding-right:10px;
+}
+
+@media screen and (max-width:1210px) {
+    .infos_films{
+        flex-direction: column;
+    }
+}

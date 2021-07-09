@@ -1,0 +1,37 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background: #fff8e3;
+}
+.formulaire{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 600px;
+    align-items: center;
+    background: #CFDC8A;
+    padding: 20px;
+    border-radius: 20px;
+}
+.gauche, .droite{
+    text-align: center;
+}
+.gauche form,.droite form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.mid{
+    height: 200px;
+    width: 2px;
+    background: black;
+}
+.gauche form input,.droite form input{
+    margin: 10px 0px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}

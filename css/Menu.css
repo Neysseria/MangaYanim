@@ -1,0 +1,657 @@
+.color {
+    background-color: #fff8e3;
+
+}
+.color2{
+    background-color: #000000;
+}
+.header{
+    position: absolute;
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background: #CFDC8A;
+    z-index: 1;
+}
+
+
+.header a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    padding: 0px;
+    z-index: 1;
+}
+.profil {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+}
+.titre img{
+    width: 150px;
+    z-index: 1;
+}
+.header a:hover{
+    text-decoration: none;
+    color: #A13D63;
+    z-index: 1;
+}
+.header .nav a{
+    padding: 0px 20px;
+    z-index: 1;
+}
+.dropdown-menu{
+    background: #ffffff !important;
+    z-index: 1;
+}
+.dropdown-menu a{
+    color: rgb(0, 0, 0) !important;
+    z-index: 1;
+}
+.dropdown-menu a:hover{
+    background: none;
+    color: #A13D63 !important;
+    z-index: 1;
+}
+.connect {
+    color: black;
+}
+/*Slideshow*/
+.Sbody{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+}
+.Stitre{
+    font-family:  'Roboto', sans-serif;
+    margin-top: 85px;
+
+    
+}
+
+.slideshow {
+    list-style-type: none;
+  }
+  
+  /** SLIDESHOW **/
+  .slideshow,
+  .slideshow:after { 
+      /*top: -16px; /*Not sure why I needed this fix*/
+      margin-top: 15px;
+        position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0px;
+      z-index: 0;
+  }
+  
+  .slideshow li span { 
+          position: absolute;
+      width: 75%;
+      height: 70%;
+      top: 50px;
+      left: 12%;
+      color: transparent;
+      box-shadow: 0px 0px 25px 9px rgb(70, 70, 70);
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      opacity: 0;
+      z-index: 0;
+      animation: imageAnimation 30s linear infinite 0s; 
+  }
+  
+  
+  
+  .slideshow li:nth-child(1) span { 
+      background-image: url(images/my-hero-academia-line-up-i99111.jpg); 
+  }
+  .slideshow li:nth-child(2) span { 
+      background-image: url(images/attack-on-titan.jpg);
+      animation-delay: 6s; 
+  }
+  .slideshow li:nth-child(3) span { 
+      background-image: url(images/seven-deadly-sins2.jpg);
+      animation-delay: 12s; 
+  }
+  .slideshow li:nth-child(4) span { 
+      background-image: url(images/one-piece.jpg);   
+      animation-delay: 18s; 
+  }
+  .slideshow li:nth-child(5) span { 
+      background-image: url(images/Detective-Conan.jpg);
+      animation-delay: 24s; 
+  }
+  
+  
+  
+  @keyframes imageAnimation { 
+      0% { opacity: 0; animation-timing-function: ease-in; }
+      8% { opacity: 1; animation-timing-function: ease-out; }
+      17% { opacity: 1 }
+      25% { opacity: 0 }
+      100% { opacity: 0 }
+  }
+  
+  
+  @keyframes titleAnimation { 
+      0% { opacity: 0 }
+      8% { opacity: 1 }
+      17% { opacity: 1 }
+      19% { opacity: 0 }
+      100% { opacity: 0 }
+  }
+  
+  
+  .no-cssanimations .cb-slideshow li span {
+      opacity: 1;
+  }
+  @media screen and (max-width: 960px) {
+      /*.nav, .connexion {
+          margin-top: -200px;
+      }*/
+      .titre {
+          margin-left: 400px;
+      }
+  }
+  /*________________________________________________________*/
+/*media query menu burger*/
+.mot {
+   /*font-size:22px;*/
+    color: white;
+    text-decoration: none;
+    display: contents;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    margin-left: 30px;
+    z-index: 1;
+}
+.liens{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -500px;
+}
+#menu {
+    margin-top: -500px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute; right: 12%;
+    z-index: 1;
+}
+#menu li{
+    justify-content:space-evenly;
+    align-items:center;
+    word-spacing: 55px;
+    z-index: 1;
+}
+.hamburger {
+    position: absolute;
+    top:17px;
+    left: 40px;
+    display: none;
+    z-index: 3;
+  }
+  .bar {
+    display: block;
+    width: 25px;
+    height: 5px;
+    margin: 3px auto;
+    margin-left: 6%;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(0, 0, 0);
+    z-index: 3;
+  }
+  .mot:hover{
+    color: #A13D63;
+    border-radius: 5px;
+  }
+  @media only screen and (max-width: 960px) {
+      .nav, .connexion {
+          margin-top: -185px;
+      }
+    #menu {
+        margin-top: -200px;
+        padding-top: 70px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        line-height: 65px;
+      top: 260px;
+      left: -100%;
+      flex-direction: column;
+      background: linear-gradient(#8f995e, #00132e);
+      width: 287px;
+      height: 90%;
+      text-align: center;
+      transition: 0.3s;
+      z-index: 3;
+    }
+    #menu.active {
+      top: 260px;
+      left: -30px;
+    }
+    
+    .mot {
+        font-size:22px;
+         color: white;
+         text-decoration: none;
+         display: contents;
+         justify-content: center;
+         text-align: left;
+         align-items: center;
+         margin-left: 30px;
+         z-index: 1;
+     }
+
+    .expand {
+        display: flex;
+        position: absolute;
+        top: 160px;
+        left: 212px;
+        cursor: pointer;
+    }
+    
+    .btnClose {
+        display: none;
+        position: absolute;
+        top: 160px;
+        left: 212px;
+        cursor: pointer;
+    }
+    .liens{
+        display: inline;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        word-spacing: 20px;
+        top: 561px;
+    }
+    .social{
+        width: 55px;
+        height: 60px;
+    }
+    .hamburger {
+      display: block;
+      cursor:pointer;
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+  .dropdown {
+      display: none;
+      background: white;
+      width: 165px;
+      height: 125px;
+      border: 2px solid grey;
+      border-radius: 5px;
+  }
+  
+  .item {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    line-height: 15px;
+    text-align: left;
+    padding: 12px;
+  }
+  .item:hover {
+      color: #A13D63;
+  }
+  /*carousel*/
+section {
+    margin-bottom: 1px;
+}
+.container {
+    max-width: 1183px !important;
+    margin: -50 auto;
+    padding: 20 20px;
+}
+.carousel {
+    display: contents;
+    text-align: left;
+    position: relative;
+    margin-top: 130px;
+}
+.carousel > input {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+.carousel > input:nth-of-type(6):checked ~ .carousel__slides .carousel__slide:first-of-type {
+    margin-left: -500%;
+}
+.carousel > input:nth-of-type(5):checked ~ .carousel__slides .carousel__slide:first-of-type {
+    margin-left: -400%;
+}
+.carousel > input:nth-of-type(4):checked ~ .carousel__slides .carousel__slide:first-of-type {
+    margin-left: -300%;
+}
+.carousel > input:nth-of-type(3):checked ~ .carousel__slides .carousel__slide:first-of-type {
+    margin-left: -200%;
+}
+.carousel > input:nth-of-type(2):checked ~ .carousel__slides .carousel__slide:first-of-type {
+    margin-left: -100%;
+}
+.carousel > input:nth-of-type(1):checked ~ .carousel__slides .carousel__slide:first-of-type {
+    margin-left: 0%;
+}
+.carousel > input:nth-of-type(1):checked ~ .carousel__thumbnails li:nth-of-type(1) {
+    box-shadow: 0px 0px 0px 2px rgba(0, 255, 149);
+}
+.carousel > input:nth-of-type(2):checked ~ .carousel__thumbnails li:nth-of-type(2) {
+    box-shadow: 0px 0px 0px 2px rgb(0, 255, 149);
+}
+.carousel > input:nth-of-type(3):checked ~ .carousel__thumbnails li:nth-of-type(3) {
+    box-shadow: 0px 0px 0px 2px rgba(0, 255, 149);
+}
+.carousel > input:nth-of-type(4):checked ~ .carousel__thumbnails li:nth-of-type(4) {
+    box-shadow: 0px 0px 0px 2px rgba(0, 255, 149);
+}
+.carousel > input:nth-of-type(5):checked ~ .carousel__thumbnails li:nth-of-type(5) {
+    box-shadow: 0px 0px 0px 2px rgba(0, 255, 149);
+}
+.carousel > input:nth-of-type(6):checked ~ .carousel__thumbnails li:nth-of-type(6) {
+    box-shadow: 0px 0px 0px 2px rgba(0, 255, 149);
+}
+.carousel__slides {
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    display: flex;
+}
+.carousel__slide {
+    position: relative;
+    display: block;
+    flex: 1 0 100%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 300ms ease-out;
+    vertical-align: top;
+    box-sizing: border-box;
+    white-space: normal;
+}
+.carousel__slide figure {
+    display: flex;
+    margin: 0;
+}
+.carousel__slide div {
+    position: relative;
+    width: 100%;
+}
+.carousel__slide div:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 66.6666666667%;
+}
+.carousel__slide div > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+.carousel__slide img {
+    display: block;
+    flex: 1 1 auto;
+    object-fit: cover;
+}
+.carousel__slide figcaption {
+    font-family: eras itc;
+    font-size: 16px;
+    align-self: flex-end;
+    padding: 20px 20px 0 20px;
+    flex: 0 0 auto;
+    width: 25%;
+    min-width: 150px;
+}
+.carousel__slide .credit {
+    margin-top: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+    display: block;
+}
+.carousel__slide.scrollable {
+    overflow-y: scroll;
+}
+.carousel__thumbnails {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin: 0 -10px;
+}
+.carousel__slides + .carousel__thumbnails {
+    margin-top: 20px;
+}
+.carousel__thumbnails li {
+    flex: 1 1 auto;
+    max-width: calc((100% / 8) - 20px);
+    margin: -11px 10px;
+    transition: all 300ms ease-in-out;
+}
+.carousel__thumbnails label {
+    display: block;
+    position: relative;
+}
+.carousel__thumbnails label:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 100%;
+}
+.carousel__thumbnails label > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+.carousel__thumbnails label:hover, .carousel__thumbnails label:focus {
+    cursor: pointer;
+}
+.carousel__thumbnails label:hover img, .carousel__thumbnails label:focus img {
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+    transition: all 300ms ease-in-out;
+}
+.carousel__thumbnails img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*@media screen and (max-width: 1190px){
+    section {
+        position: absolute;
+        top: 58%;
+    }
+    .carousel__thumbnails {
+        display: block;
+    }
+}*/
+/*_________________________________________________________________*/
+/*Menu videos*/
+/* 3D Slideshow */ 
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+    text-decoration: none!important;
+    
+}
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+#slideshow {
+	margin: 0 auto;
+	padding-top: 30px;
+	height: 950px;
+	width: 100%;
+	/*background-color: #6adecd;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("images_menu/My_hero_academia.jpg");
+	box-sizing: border-box;
+}
+
+.slideshow-title {
+	font-family: 'Allerta Stencil';
+	font-size: 62px;
+	color: #fff;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 25%;
+	letter-spacing: 3px;
+	font-weight: 300;
+}
+h6 {
+    color: white;
+    z-index: 1;
+}
+.sub-heading {
+    background: -moz-linear-gradient(red, yellow, rgb(30, 144, 255)) repeat scroll 0% 0% transparent;
+    background: linear-gradient(red, yellow, rgb(30, 144, 255));
+    padding-left: 25px;
+    font-family: arial;
+    font-size: 18px;
+    color: white;
+    z-index: 1;
+} .sub-heading-two {
+	font-size: 15px;
+} .sub-heading-three {
+	font-size: 13px;
+} .sub-heading-four {
+	font-size: 11px;
+} .sub-heading-five {
+	font-size: 9px;
+} .sub-heading-six {
+	font-size: 7px;
+} .sub-heading-seven {
+	font-size: 5px;
+} .sub-heading-eight {
+	font-size: 3px;
+} .sub-heading-nine {
+	font-size: 1px;
+}
+
+.entire-content {
+	margin: auto;
+	width: 260px;
+	/*perspective: 1000px;*/
+	position: relative;
+	padding-top: 230px;
+}
+
+.content-carrousel {
+	width: 158%;
+	position: absolute;
+	float: right;
+	animation: rotar 30s infinite reverse linear;
+	transform-style: preserve-3d;
+}
+
+.content-carrousel:hover {
+	animation-play-state: paused;
+	cursor: pointer;
+}
+
+.content-carrousel figure {
+	width: 100%;
+	height: 295px;
+	border: 1px solid #3b444b;
+	overflow: hidden;
+	position: absolute;
+}
+
+.content-carrousel figure:nth-child(1) {
+	transform: rotateY(0deg) translateZ(570px); 
+    z-index: 0;
+} .content-carrousel figure:nth-child(2) {
+	transform: rotateY(80deg) translateZ(569px); 
+} .content-carrousel figure:nth-child(3) {
+	transform: rotateY(40deg) translateZ(569px); 
+} .content-carrousel figure:nth-child(4) {
+	transform: rotateY(120deg) translateZ(569px); 
+} .content-carrousel figure:nth-child(5) {
+	transform: rotateY(160deg) translateZ(569px); 
+} .content-carrousel figure:nth-child(6) {
+	transform: rotateY(200deg) translateZ(569px); 
+} .content-carrousel figure:nth-child(7) {
+	transform: rotateY(240deg) translateZ(569px); 
+} .content-carrousel figure:nth-child(8) {
+	transform: rotateY(280deg) translateZ(569px); 
+} .content-carrousel figure:nth-child(9) {
+	transform: rotateY(320deg) translateZ(569px); 
+} .content-carrousel figure:nth-child(10) {
+	transform: rotateY(0deg) translateZ(0px); 
+} 
+
+.shadow {
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px #000;
+    border-radius: 1px;
+}
+
+.content-carrousel img {
+	image-rendering: auto;
+	transition: all 300ms;
+	width: 100%;
+	height: 100%;
+}
+
+.content-carrousel img:hover {
+	transform: scale(1.2);
+	transition: all 300ms;
+}
+
+@keyframes rotar {
+	from {
+		transform: rotateY(0deg);
+	} to {
+		transform: rotateY(360deg);
+	}
+}
+/*____________________________________________________________________________*/
+.video {
+    margin-left: 150px;
+}
