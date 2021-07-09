@@ -24,8 +24,16 @@ body {
     font-size:13px;
 }
 
+.vide{
+    background: beige;
+}
 ul li {
     list-style: none;
+}
+
+ul{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 a, a:hover, a:focus {
@@ -54,14 +62,24 @@ a, a:hover, a:focus {
 .sub-menu{
     margin-top: 50px;
 }
+.sub-menu a{
+    padding-left: 32px;
+}
 
 
 #sidebar ul li {
     position: relative;
+
 }
 
 #sidebar .sub-menu > .sub li  {
     padding-left: 32px;
+
+}
+
+.connexion{
+    padding-left: 50px;
+    padding-top: 100px ;
 }
 
 #sidebar .sub-menu  {
@@ -84,12 +102,12 @@ a, a:hover, a:focus {
     width: 80%;
     /* display: flex;
     justify-content: center; */
-    margin-left: 300px;
+    margin-left: 200px;
 }
 
 #main-content .ajout {
-    background:green;
-    margin-left: 50%;
+    background:#a5dca5;
+     margin-left: 30%; 
     
     font-weight: bold;
     margin-bottom: 30px;
@@ -108,13 +126,54 @@ a, a:hover, a:focus {
     color: blue !important;
     font-weight: bold !important;
 }
+
 thead{
-    background-color: green;
+    background-color: #a5dca5;
     color: black;
     font-weight: bold;
     font-size: medium;
+    border-collapse: collapse;
+
+    
 }
 
+th{
+    margin-bottom: 15px;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    /* border-collapse: collapse; */
+
+}
+
+td{
+    text-align: center;
+    height: 60px;
+    font-size: 15px;
+    /* border-collapse: collapse; */
+}
+
+/* page role */
+.admin{
+    margin-left: 200px;
+    background-image: url(image/ciel.jpg);
+}
+
+.admin input{
+    width: 200px;
+    border-radius: 20px;
+    background: darkgray;
+    margin-top: 30px;
+    color: black;
+    height: 30px;
+    font-size: 15px;
+    
+}
+
+/* page modifmembre */
+.modif form{
+    margin-top: 100px !important;
+}
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     /* Safari and Chrome */
@@ -155,8 +214,6 @@ ul li {
 
 
 
-
-
 /*fontawesome*/
 .fontawesome-icon-list h2 {
     margin-top: 0;
@@ -188,8 +245,6 @@ ul li {
 #web-application, #text-editor, #directional, #video-player, #brand, #medical, #currency {
     margin-top: 10px;
 }
-
-
 
 
 
